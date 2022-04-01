@@ -13,6 +13,7 @@ header{
     padding:5% 6% ;
     justify-content: space-between;
     align-content: center;
+    margin-top: 7%;
 }
 header div:first-child svg , header div:last-child svg{
     margin-right:16px;
@@ -67,16 +68,36 @@ header img{
   
   .show {display:block;}
 
+
 .banner{
-    background-image: url("./../images/image-product-1.jpg");
-    background-size: cover;
+    /* background-image: url("./../images/image-product-1.jpg");
+    background-size: cover; */
     width:100%;
-    height:300px;
-    display: flex;
+    height:400px;
+    position: relative;
+    /* display: flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-between; */
 }
 
+.banner img {
+    height: 400px;
+    width:100%
+}
+
+.mySlides{
+    display:none ;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 .banner div{
     border-radius: 50%;
     background-color: #fff;
@@ -86,6 +107,12 @@ header img{
     display:flex;
     align-items:center;
     justify-content:center;
+    position: absolute; 
+    top:40%;
+}
+
+.banner div:last-child{
+right:2%;
 }
 
 
